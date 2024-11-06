@@ -1,6 +1,5 @@
-package ci.luckyman.customerservice.customer;
+package ci.luckyman.customerservice.entities;
 
-import lombok.Getter;
 import org.springframework.data.rest.core.config.Projection;
 
 @Projection(name = "all", types = Customer.class)

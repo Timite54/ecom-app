@@ -1,4 +1,4 @@
-package ci.luckyman.customerservice.customer;
+package ci.luckyman.customerservice.entities;
 
 import org.springframework.data.rest.core.config.Projection;
 

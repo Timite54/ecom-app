@@ -1,8 +1,7 @@
 package ci.luckyman.customerservice;
 
-import ci.luckyman.customerservice.customer.Customer;
+import ci.luckyman.customerservice.entities.Customer;
 import ci.luckyman.customerservice.repository.CustomerRepository;
-import lombok.Builder;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

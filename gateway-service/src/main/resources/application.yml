@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+        routes:
+          - id: customer-gateway
+            uri: http://localhost:8081
+            predicates:
+              - path = /customers/**
+
+          - id: inventory-gateway
+            uri: http//localhost:8082
+            predicates:
+              - path = /products/**
+
+#  main:
+#    web-application-type: reactive

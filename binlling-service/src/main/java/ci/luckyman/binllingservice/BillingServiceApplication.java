@@ -2,12 +2,13 @@ package ci.luckyman.binllingservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-public class BinllingServiceApplication {
+@EnableFeignClients
+public class BillingServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BinllingServiceApplication.class, args);
+		SpringApplication.run(BillingServiceApplication.class, args);
 	}
-
 }

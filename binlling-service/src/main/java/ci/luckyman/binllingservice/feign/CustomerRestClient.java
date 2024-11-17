@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 @FeignClient(name = "customer-service")
 public interface CustomerRestClient {
-    @GetMapping("/customer/{id}")
+    @GetMapping("/customers/{id}")
     Customer getCustomerById(@PathVariable String id);
 
-    @GetMapping("/customer")
+    @GetMapping("/customers")
     PagedModel<Customer> getCustomerById();
 
 
